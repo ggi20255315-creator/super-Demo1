@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="images/logo2.jpg" />
+    <title>about</title>
+    <link rel="stylesheet" href="about.css"/>
+</head>
+<body>
+       <div id="header"></div>
+       <main>
+
+
+       </main>
+       <div id="footer"></div>
+       <script>
+        fetch("header.html")
+            .then(res => res.text())
+            .then(data =>
+                document.getElementById("header").innerHTML = data);
+                 fetch("footer.html")
+            .then(res => res.text())
+            .then(data =>
+                document.getElementById("footer").innerHTML = data);
+    </script>
+    </script>
+</body>
+</html>
