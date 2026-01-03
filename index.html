@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Hindi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="icon" href="images/logo2.jpg" />
-    <title>B2F</title>
+    <title>M Kumar</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <div id="header"></div>
+    
     <!-- main body -->
     <main>
         <section class="imgbox">
@@ -21,40 +22,44 @@
             <img src="i1.jpg" alt="images" width="100%" />
         </section>
         <!-- <div class="databox"> -->
-            <div class="imgbox2">
-                <div class="databox-image">
-                    <img src="c1.jpg" />
-                    <p>TAST</p>
-                </div>
-                <div class="databox-image">
-                    <img src="c1.jpg" />
-                    <p>TAST</p>
-                </div>
-                <div class="databox-image">
-                    <img src="c1.jpg" />
-                    <p>TAST</p>
-                </div>
-                <div class="databox-image">
-                    <img src="c1.jpg" />
-                    <p>TAST</p>
-                </div>
-                <div class="databox-image">
-                    <img src="c1.jpg" />
-                    <p>TAST</p>
-                </div>
-                <div class="databox-image">
-                    <img src="c1.jpg" />
-                    <p>TAST</p>
-                </div>
-                <div class="databox-image">
-                    <img src="c1.jpg" />
-                    <p>TAST</p>
-                </div>
-                <div class="databox-image">
-                    <img src="c1.jpg" />
-                    <p>TAST</p>
-                </div>
+        <div class="imgbox2">
+            <div class="databox-image">
+                <img src="c1.jpg" />
+                <p>TAST</p>
             </div>
+            <div class="databox-image">
+                <img src="c1.jpg" />
+                <p>TAST</p>
+            </div>
+             <div class="databox-image">
+                <img src="c1.jpg" />
+                <p>TAST</p>
+            </div>
+            <div class="databox-image">
+                <img src="c1.jpg" />
+                <p>TAST</p>
+            </div>
+            <div class="databox-image">
+                <img src="c1.jpg" />
+                <p>TAST</p>
+            </div>
+            <div class="databox-image">
+                <img src="c1.jpg" />
+                <p>TAST</p>
+            </div>
+            <div class="databox-image">
+                <img src="c1.jpg" />
+                <p>TAST</p>
+            </div>
+            <div class="databox-image">
+                <img src="c1.jpg" />
+                <p>TAST</p>
+            </div>
+            <div class="databox-image">
+                <img src="c1.jpg" />
+                <p>TAST</p>
+            </div>
+        </div>
         </div>
         <hr>
     </main>
@@ -64,6 +69,10 @@
             .then(res => res.text())
             .then(data =>
                 document.getElementById("header").innerHTML = data);
+        fetch("follow.html")
+            .then(res => res.text())
+            .then(data =>
+                document.getElementById("follow").innerHTML = data);
         fetch("footer.html")
             .then(res => res.text())
             .then(data =>
@@ -71,7 +80,4 @@
     </script>
 </body>
 
-
-
 </html>
-

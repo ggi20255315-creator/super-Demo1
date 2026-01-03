@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow-x: hidden;
+
+        }
+
+        .box {
+            box-shadow: 1px 0 7px 2px rgb(232, 63, 127);
+            display: flex;
+            flex-direction: column;
+            margin: 70px 400px;
+            height: 400px;
+            background-color: aqua;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+
+        h1 {
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        input,
+        textarea {
+            resize: none;
+        }
+
+        input {
+            height: 30px;
+            box-decoration-break: slice;
+        }
+
+        #feedbackForm {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        button {
+            navigation: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <div class="box">
+        <h1>Feedback</h1>
+
+        <form id="feedbackForm">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Gmail" required>
+            <textarea rows="4" placeholder="Message" required></textarea>
+
+            <div class="rating">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+                <p id="rateText">Rating: 0</p>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="success" id="successMsg">
+            ✅ Thank you for your feedback!
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script>
+        fetch("header.html")
+            .then(res => res.text())
+            .then(data =>
+                document.getElementById("header").innerHTML = data);
+        fetch("follow.html")
+            .then(res => res.text())
+            .then(data =>
+                document.getElementById("follow").innerHTML = data);
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(data =>
+                document.getElementById("footer").innerHTML = data);
+    </script>
+</body>
+
+</html>

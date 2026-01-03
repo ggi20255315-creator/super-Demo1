@@ -11,40 +11,40 @@
 </head>
 
 <body>
-    <div id="header"></div>
+    <div id="header"><div id="follow"></div></div>
     <main>
         <div class="imgbox2">
             <div class="databox-image">
-                <img src="images/c1.jpg" alt="HTml"/>
-                <p>HTML</p>
+                <img src="c1.jpg" alt="HTml" />
+                <a href="#">HTML</a>
             </div>
             <div class="databox-image">
-                <img src="images/c1.jpg" alt="HTml"/>
-                <p>HTML</p>
+                <img src="c1.jpg" alt="HTml" />
+                <a href="#">HTML</a>
             </div>
             <div class="databox-image">
-                <img src="images/c1.jpg" alt="HTml"/>
-                <p>HTML</p>
+                <img src="c1.jpg" alt="HTml" />
+                <a href="#">HTML</a>
             </div>
             <div class="databox-image">
-                <img src="images/c1.jpg" alt="HTml"/>
-                <p>HTML</p>
+                <img src="c1.jpg" alt="HTml" />
+                <a href="#">HTML</a>
             </div>
             <div class="databox-image">
-                <img src="images/c2.jpg" alt="HTml" />
-                <p>HTML</p>
+                <img src="c2.jpg" alt="HTml" />
+                <a href="#">HTML</a>
             </div>
             <div class="databox-image">
-                <img src="images/c1.jpg" alt="HTml" />
-                 <p>HTML</p>
+                <img src="c1.jpg" alt="HTml" />
+                <a href="#">HTML</a>
             </div>
             <div class="databox-image">
-                <img src="images/c2.jpg" alt="HTml" />
-                <p>HTML</p>
+                <img src="c2.jpg" alt="HTml" />
+                <a href="#">HTML</a>
             </div>
             <div class="databox-image">
-                <img src="images/c1.jpg" alt="HTml" />
-                <p>HTML</p>
+                <img src="c1.jpg" alt="HTml" />
+                <a href="#">HTML</a>
             </div>
         </div>
     </main>
@@ -58,7 +58,10 @@
             .then(res => res.text())
             .then(data =>
                 document.getElementById("footer").innerHTML = data);
-    </script>
+        fetch("f0llow.html")
+            .then(res => res.text())
+            .then(data =>
+                document.getElementById("follow").innerHTML = data);        
     </script>
 </body>
 

@@ -34,6 +34,6 @@ body {
     box-shadow: 0 0 7px 0px rgb(42, 232, 13);
 }
 
-.databox-image p {
+.databox-image a {
     margin: 20px 50px;
 }
